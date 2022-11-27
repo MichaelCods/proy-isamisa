@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity(name="DetalleEntity")
-@Table(name="detalles")
+@Table(name="detalle")
 public class DetalleEntity implements Serializable{
      
    
