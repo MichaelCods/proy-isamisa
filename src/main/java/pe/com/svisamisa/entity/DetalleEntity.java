@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity(name="DetalleEntity")
 @Table(name="detalles")
-public class DetalleEntity implements Serializable {
+public class DetalleEntity implements Serializable{
      
    
     private static final long serialVersionUID=1L;
@@ -32,10 +32,10 @@ public class DetalleEntity implements Serializable {
     @Column(name="id_detalle")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name="cantidad")
-    private double cantidad;
     @Column(name="nombre")
     private String nombre;
+    @Column(name="cantidad")
+    private double cantidad;
     @Column(name="precio")
     private double precio;
     @Column(name="total")

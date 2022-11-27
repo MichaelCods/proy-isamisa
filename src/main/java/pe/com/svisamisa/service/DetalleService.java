@@ -9,8 +9,8 @@ import java.util.Optional;
 import pe.com.svisamisa.entity.DetalleEntity;
 
 public interface DetalleService {
-    List<DetalleEntity>finAll();
-    List<DetalleEntity>finAllCustom();
+    List<DetalleEntity>findAll();
+    List<DetalleEntity>findAllCustom();
     Optional<DetalleEntity>findById(Long id);
     DetalleEntity add(DetalleEntity d);
     DetalleEntity update(DetalleEntity d);

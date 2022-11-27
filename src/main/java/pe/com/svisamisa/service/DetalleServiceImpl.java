@@ -19,12 +19,12 @@ public class DetalleServiceImpl implements DetalleService{
     private DetalleRepository detallerepository;
     
     @Override
-    public List<DetalleEntity> finAll() {
+    public List<DetalleEntity> findAll() {
         return detallerepository.findAll();
     }
 
     @Override
-    public List<DetalleEntity> finAllCustom() {
+    public List<DetalleEntity> findAllCustom() {
         return detallerepository.findAllCustom();
     }
 

@@ -26,12 +26,12 @@ public class DetalleController {
     
     @GetMapping
     public List<DetalleEntity>finAll(){
-        return detalleservicio.finAll();
+        return detalleservicio.findAll();
     }
    
     @GetMapping("/custom")
     public List<DetalleEntity> findAllCustom() {
-        return detalleservicio.finAllCustom();
+        return detalleservicio.findAllCustom();
     }
 
     @GetMapping("/{id}")
@@ -55,6 +55,5 @@ public class DetalleController {
         DetalleEntity objdetalle=new DetalleEntity();
         objdetalle.setEstado(false);
         return detalleservicio.delete(DetalleEntity.builder().id(id).build());     
-    }  
-    
+    }    
 }
