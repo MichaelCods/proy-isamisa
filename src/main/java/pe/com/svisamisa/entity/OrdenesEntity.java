@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package pe.com.svisamisa.entity;
 
 import java.io.Serializable;
@@ -57,8 +54,8 @@ public class OrdenesEntity implements Serializable{
     @Column(name="estado")
     private boolean estado;
     @ManyToOne
-    @JoinColumn(name="id_usuario",nullable = false)
-    private UsuarioEntity usuario;
+    @JoinColumn(name="id_cliente",nullable = false)
+    private ClienteEntity cliente;
     @OneToOne
     @JoinColumn(name="id_detalle",nullable = false)
     private DetalleEntity detalle;
