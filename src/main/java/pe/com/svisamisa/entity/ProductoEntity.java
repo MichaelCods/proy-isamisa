@@ -47,4 +47,7 @@ public class ProductoEntity implements Serializable{
     @ManyToOne
     @JoinColumn(name="id_cliente",nullable=false)
     private ClienteEntity cliente;
+    @ManyToOne
+    @JoinColumn(name="id_empleado",nullable=false)
+    private EmpleadoEntity empleado;
 }
